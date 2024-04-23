@@ -1,74 +1,78 @@
 # Dotfiles
 
-Ce dépôt contient mes configurations personnelles pour Neovim, tmux, zsh, et kitty. Voici les instructions pour installer et configurer ces outils sur votre système.
+This repository contains my personal configurations for Neovim, tmux, zsh, and kitty. Below are the instructions to install and configure these tools on your system.
 
-## Prérequis
+## Prerequisites
 
-Avant de commencer, assurez-vous d'avoir `git` installé sur votre machine pour pouvoir cloner ce dépôt. Si vous n'avez pas `git`, vous pouvez l'installer avec la commande suivante (pour Ubuntu):
+Before starting, make sure you have `git` installed on your machine to clone this repository. If you do not have `git`, you can install it using the following command (for Ubuntu):
 
     sudo apt update && sudo apt install git
 
 ## Installation
 
-Cloner le dépôt et installer les dotfiles :
+Clone the repository:
 
-    git clone git@github.com:kaez/dotfiles.git ~/dotfiles
+    git clone https://your-repo/dotfiles.git ~/dotfiles
     cd ~/dotfiles
 
-## Configuration de Kitty
+## Kitty Configuration
 
-[Kitty](https://sw.kovidgoyal.net/kitty/) est un émulateur de terminal moderne, rapide et riche en fonctionnalités. Pour l'utiliser :
+Kitty is a modern, fast, and feature-rich terminal emulator. To use it:
 
-1. Assurez-vous d'avoir Kitty installé. Si non, vous pouvez l'installer via :
-   ```bash
+1. Install Kitty:
+   ```
    sudo apt install kitty
    ```
-2. Le fichier de configuration est lié dans le répertoire `.config/kitty` de votre dossier personnel.
 
-## Configuration de Zsh et Oh My Zsh
+## Zsh and Oh My Zsh Configuration
 
-`Zsh` est un interpréteur de commandes puissant, et `Oh My Zsh` est un framework pour gérer votre configuration zsh.
+Zsh is a powerful command interpreter, and Oh My Zsh is a framework for managing your zsh configuration.
 
-1. Installez Zsh avec :
-   ```bash
+1. Install Zsh:
+   ```
    sudo apt install zsh
    ```
-2. Rendez zsh votre shell par défaut :
-   ```bash
+2. Make zsh your default shell:
+   ```
    chsh -s $(which zsh)
    ```
-3. Installer Oh My Zsh :
-   ```bash
+3. Install Oh My Zsh:
+   ```
    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
    ```
 
-## Configuration de Tmux
+## Tmux Configuration
 
-`tmux` est un multiplexeur de terminal qui permet plusieurs sessions de terminal dans une seule fenêtre.
+tmux is a terminal multiplexer that allows for multiple terminal sessions in one window.
 
-1. Installez tmux si ce n'est pas déjà fait :
-   ```bash
+1. Install tmux:
+   ```
    sudo apt install tmux
    ```
-2. Les fichiers de configuration `.tmux.conf` et `.tmux.conf.local` sont dans votre répertoire personnel.
 
-## Configuration de Neovim
+## Neovim Configuration
 
-`Neovim` est un éditeur de texte basé sur Vim, mais avec des fonctionnalités améliorées.
+Neovim is a text editor based on Vim, but with improved features.
 
-1. Installez Neovim avec :
-   ```bash
+1. Install Neovim:
+   ```
    sudo apt install neovim
    ```
-2. La configuration est située dans `~/.config/nvim`.
 
-## Mises à jour
+## Apply the configurations
 
-Pour mettre à jour vos configurations, tirez les dernières modifications du dépôt et relancez les scripts d'installation si nécessaire.
+After installing the necessary software, run the installation script to apply the configurations:
+
+    chmod +x install.sh
+    ./install.sh
+
+## Updates
+
+To update your configurations, pull the latest changes from the repository and rerun the installation scripts if necessary.
 
     cd ~/dotfiles
     git pull
 
 ## Contributions
 
-Les contributions à ce dépôt sont les bienvenues. Si vous avez des suggestions ou des améliorations, n'hésitez pas à créer une issue ou un pull request.
+Contributions to this repository are welcome. If you have suggestions or improvements, feel free to create an issue or a pull request.
