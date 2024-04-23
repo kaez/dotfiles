@@ -12,7 +12,7 @@ Avant de commencer, assurez-vous d'avoir `git` installé sur votre machine pour 
 
 Cloner le dépôt et installer les dotfiles :
 
-    git clone https://votre-repo/dotfiles.git ~/dotfiles
+    git clone git@github.com:kaez/dotfiles.git ~/dotfiles
     cd ~/dotfiles
 
 ## Configuration de Kitty
