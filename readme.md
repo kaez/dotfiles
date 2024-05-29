@@ -62,7 +62,6 @@ Neovim is a text editor based on Vim, but with improved features.
    ```
    sudo snap install nvim
    ```
-   
 3. Install neovim using brew
   ```
   sudo brew install neovim
