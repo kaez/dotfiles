@@ -54,12 +54,20 @@ tmux is a terminal multiplexer that allows for multiple terminal sessions in one
 
 Neovim is a text editor based on Vim, but with improved features.
 
-1. Install Neovim:
+1. Install Neovim using apt :
    ```
-   sudo apt install Neovim
-   lazyvim require neovim => 0.8.0
-   or try sudo snap install nvim
+   sudo apt install neovim
    ```
+2. Install Neovim using snap
+   ```
+   sudo snap install nvim
+   ```
+   
+3. Install neovim using brew
+  ```
+  sudo brew install neovim
+  ```
+
 
 ## Apply the configurations
 
