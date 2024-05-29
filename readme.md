@@ -56,7 +56,9 @@ Neovim is a text editor based on Vim, but with improved features.
 
 1. Install Neovim:
    ```
-   sudo apt install neovim
+   sudo apt install Neovim
+   lazyvim require neovim => 0.8.0
+   or try sudo snap install nvim
    ```
 
 ## Apply the configurations

@@ -6,10 +6,10 @@ log_file="$HOME/dotfiles_install.log"
 
 # Function to check if software is installed
 check_software() {
-	if ! command -v $1 &>/dev/null; then
-		echo "$1 is not installed. Please install it before continuing."
-		exit 1
-	fi
+        if ! command -v $1 &>/dev/null; then
+                echo "$1 is not installed. Please install it before continuing."
+                exit 1
+        fi
 }
 
 # Checking for necessary software
@@ -24,7 +24,7 @@ echo "All necessary software is installed."
 # Parameterization of the path to the dotfiles
 DOTFILES_DIR="$HOME/dotfiles"
 if [[ "$#" -eq 1 ]]; then
-	DOTFILES_DIR=$1
+        DOTFILES_DIR=$1
 fi
 echo "Dotfiles directory: $DOTFILES_DIR"
 
@@ -50,7 +50,7 @@ echo "Directories are ready."
 
 # Removing current configurations
 echo "Cleaning up current configurations..."
-rm -f ~/.config/nvim
+rm -rf ~/.config/nvim
 rm -f ~/.tmux.conf
 rm -f ~/.tmux.conf.local
 rm -f ~/.zshrc
@@ -68,3 +68,4 @@ echo "Symbolic links successfully created."
 
 echo "Installation completed! Your dotfiles have been configured." | tee -a $log_file
 echo "All configuration files are backed up in $backup_dir." | tee -a $log_file
+
