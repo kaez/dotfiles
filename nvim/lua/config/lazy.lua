@@ -8,11 +8,11 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 -- Utiliser le presse-papiers système pour les opérations de copie/coller
 vim.opt.clipboard = "unnamedplus"
-
 -- Désactiver l'ajout de texte au presse-papiers existant
 vim.api.nvim_set_keymap("x", "y", '"+yg_', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "p", '"+p', { noremap = true, silent = true })
 vim.opt.colorcolumn = "120"
+-- In your init.lua or another appropriate configuration filter
 
 require("lazy").setup({
   spec = {
