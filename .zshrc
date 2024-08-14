@@ -116,5 +116,7 @@ alias python=python3
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+  alias fd=fdfind
+
   # zsh
   source <(fzf --zsh)

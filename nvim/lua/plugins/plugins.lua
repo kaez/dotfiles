@@ -27,7 +27,6 @@ return {
     keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
     config = true,
   },
-  { "phpactor/phpactor", enabled = false },
 
   -- override nvim-cmp and add cmp-emoji
   {
